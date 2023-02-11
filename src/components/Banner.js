@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "Team Leader" ];
+  const toRotate = [ "Web Developer", "Artificial Intelligence Engineer", "Team Leader", "React Developer", "Flutter Developer", "Full-Stack Developer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,11 +56,11 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Odina`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Team Leder" ]'><span className="wrap">{text}</span></span></h1>
-                <p>My fullname is Saidnazarova Odinanabonu. I'm 15 years old. I study 249-school in 10th grade.I am a front-end web developer. I can make the website more, more interactive with web animation
-           I study at Web Brain Academy group G5. When I first came to web brain, I had no knowledge of programming.
-           But now with the help of strong aspirations and teachers, my level of knowledge has greatly increased and I can freely create web site views that are used in our daily lives
-        </p>
+                <h1>{`Hi! I'm Huseyin`} <span className="txt-rotate" dataPeriod="1000" data-rotate={toRotate}><span className="wrap">{text}</span></span></h1>
+                <p>Engineering the Future with AI - Huseyin Pekkan, AI Engineering Student at TOBB ETU. Skilled in Deep Learning, Machine Learning, NLP, Image Processing,
+                 Web Development, Web3, and Full-Stack Development with MySQL, Express, React, and Axios. Bringing Ideas to Life with React, Flutter, HTML, CSS, Angular,
+                  and cloud platforms such as Google Colab, Azure, and AWS. Driven to solve complex problems and continuously expand my knowledge, I am dedicated to creating 
+                  impactful solutions and making a difference in the world of AI.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
