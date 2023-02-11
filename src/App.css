@@ -91,7 +91,7 @@ p.danger {
     height: auto;
   }
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up */
 @media only screen and (min-width: 600px) {
   .navbar-logo {
     width: 10em;
