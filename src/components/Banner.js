@@ -57,9 +57,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Huseyin`} <span className="txt-rotate" dataPeriod="1000" data-rotate={toRotate}><span className="wrap">{text}</span></span></h1>
-                <p>Engineering the Future with AI - Huseyin Pekkan, AI Engineering Student at TOBB ETU. Skilled in Deep Learning, Machine Learning, NLP, Image Processing,
-                 Web Development, Web3, and Full-Stack Development with MySQL, Express, React, and Axios. Bringing Ideas to Life with React, Flutter, HTML, CSS, Angular,
-                  and cloud platforms such as Google Colab, Azure, and AWS. Driven to solve complex problems and continuously expand my knowledge, I am dedicated to creating 
+                <p>Engineering the Future with AI - Huseyin Pekkan, AI Engineering Student at TOBB ETU. Driven to solve complex problems and continuously expand my knowledge, I am dedicated to creating 
                   impactful solutions and making a difference in the world of AI.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
