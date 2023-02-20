@@ -27,7 +27,9 @@ export const Skills = () => {
       items: 1
     }
   };
-
+  const handleClick = () => {
+    window.open('https://github.com/hpekkan/DigitDetect', '_blank');
+  }
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -39,7 +41,7 @@ export const Skills = () => {
                          the fields of AI, ML, and web development. Instead of relying on percentage-based skill charts, my portfolio provides a clear representation
                           of my capabilities through the projects I've worked on, ensuring that what you see is a genuine and accurate portrayal of my skills.<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
+                            <div className="item" onClick={handleClick}>
                                  {<img src={meter1} alt="Image" />}
                                 <h5>DigitDetect</h5>
                             </div>
